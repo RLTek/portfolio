@@ -14,7 +14,9 @@ body{
 
 h2{
     font-size: 2em;
-   
+    font-family: 'Pacifico', cursive;
+    letter-spacing: .15em;
+    text-shadow: 0 0 .5em white;
 }
 
 /* navigation section*/
@@ -25,13 +27,15 @@ nav{
     flex-direction: column;
     align-content: flex-end;
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: 2.5em;
 }
 
 h1{
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: -.25em;
-    
+    font-family: 'Pacifico', cursive;
+    letter-spacing: .25em;
+    text-shadow: 0 0 .5em white;
 }
 
 #nav-links{
@@ -50,6 +54,7 @@ h1{
     font-size: 1.5em;
     margin-bottom: .5em;
     color: white;
+    font-family: 'Share Tech', sans-serif;
 }
 
 #nav-links a:visited{
@@ -64,7 +69,7 @@ h1{
     height: 15em;
     width: 15em;
     border-radius: 50%;
-    margin-top: 1.5em;
+    margin-top: 3.5em;
     margin-bottom: 1.5em;
     box-shadow: 0 0 1em .25em white;
 }
@@ -89,7 +94,7 @@ p{
     font-size: 1.5em;
     margin-right: 2.5em;
     margin-left: 2.5em;
-    
+    font-family: 'Share Tech', sans-serif;
 }
 p a:visited{
     color: blue;
@@ -100,7 +105,6 @@ p a:visited{
 #contact-options{
     display: flex;
     justify-content: space-around;
-    
    
 }
 
@@ -109,10 +113,62 @@ p a:visited{
     height: 5em;
     border-radius: 50%;
     margin-top: 2em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 1em .25em white;
 }
 
 #contact-options li{
     list-style: none;
     font-size: 1.5em;
     margin-bottom: 2em;
+    font-family: 'Share Tech', sans-serif;
+}
+
+/*Cellphone screens*/
+@media screen and (min-width: 380px) {
+    /*Nav bar*/
+    #nav-links{
+        justify-content: space-evenly;
+        gap: .5em;
+        
+    }
+
+    #nav-links li{
+        font-size: 1em;
+    }
+    
+    /*Contact section*/
+    #contact-options{
+        justify-content: space-evenly;
+        margin-right: 2em;
+    }
+}
+
+/*Larger screens*/
+@media screen and (min-width: 850px){
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .logo img{
+        margin-bottom: 3em;
+    }
+
+    h1{
+        font-size: 4em;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    p{
+        font-size: 2em;
+    }
+    
+    #nav-links li{
+        font-size: 1.5em;
+    }
 }
