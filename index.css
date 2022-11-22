@@ -12,6 +12,11 @@ body{
    
 }
 
+h2{
+    font-size: 2em;
+   
+}
+
 /* navigation section*/
 nav{
     display: flex;
@@ -20,13 +25,21 @@ nav{
     flex-direction: column;
     align-content: flex-end;
     width: 100%;
+    margin-bottom: 1em;
+}
+
+h1{
+    font-size: 2em;
+    margin-top: -.25em;
+    
 }
 
 #nav-links{
     display: flex;
     justify-content: space-evenly;
     background-color: black;
-    margin-bottom: -2.5em;
+    margin-bottom: -1em;
+    margin-top: -1em;
     border-radius: .75em;
     height: 2.5em;
 }
@@ -35,7 +48,7 @@ nav{
     list-style: none;
     margin-top: .25em;
     font-size: 1.5em;
-    margin-bottom: .25em;
+    margin-bottom: .5em;
     color: white;
 }
 
@@ -51,7 +64,9 @@ nav{
     height: 15em;
     width: 15em;
     border-radius: 50%;
-    
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    box-shadow: 0 0 1em .25em white;
 }
 
 /*Content area*/
@@ -61,10 +76,13 @@ nav{
     padding-top: 2em;
     padding-bottom: 2em;
     height: 28em;
-    min-width: 24em;
+    min-width: 20em;
     max-width: 60em;
     margin: auto;
     flex-wrap: wrap;
+    border-radius: 1em;
+    flex-shrink: 1;
+    box-shadow: 0 0 1em .25em white;
 }
 
 p{
@@ -75,4 +93,26 @@ p{
 }
 p a:visited{
     color: blue;
+}
+
+/*Contact section*/
+
+#contact-options{
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+
+#contact-options img{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+#contact-options li{
+    list-style: none;
+    font-size: 1.5em;
+    margin-bottom: 2em;
 }
