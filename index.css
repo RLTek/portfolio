@@ -17,6 +17,7 @@ h2{
     font-family: 'Pacifico', cursive;
     letter-spacing: .15em;
     text-shadow: 0 0 .5em white;
+    margin-top: .25em;
 }
 
 /* navigation section*/
@@ -80,7 +81,8 @@ h1{
     margin-top: -1.5em;
     padding-top: 2em;
     padding-bottom: 2em;
-    height: 28em;
+    min-height: 28em;
+    max-height: 100%;
     min-width: 20em;
     max-width: 60em;
     margin: auto;
@@ -95,9 +97,41 @@ p{
     margin-right: 2.5em;
     margin-left: 2.5em;
     font-family: 'Share Tech', sans-serif;
+    text-shadow: 0 0 .5em white;
 }
 p a:visited{
     color: blue;
+}
+/*Portfolio section*/
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+.portfolio img{
+    width: 10em;
+    height: 10em;
+    margin-top: 1em;
+}
+
+.portfolio-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.portfolio a:visited{
+    color: black;
+}
+
+
+.portfolio-item{
+    box-shadow: 0 0 1em .25em white;
+    width: 18em;
+    height: 18em;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 /*Contact section*/
@@ -125,7 +159,7 @@ p a:visited{
 }
 
 /*Cellphone screens*/
-@media screen and (min-width: 380px) {
+@media screen and (max-width: 380px) {
     /*Nav bar*/
     #nav-links{
         justify-content: space-evenly;
@@ -139,9 +173,16 @@ p a:visited{
     
     /*Contact section*/
     #contact-options{
-        justify-content: space-evenly;
-        margin-right: 2em;
+        justify-content: space-around;
+       
     }
+
+    .portfolio-item{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
 }
 
 /*Larger screens*/
@@ -167,8 +208,13 @@ p a:visited{
     p{
         font-size: 2em;
     }
-    
+
     #nav-links li{
         font-size: 1.5em;
+    }
+
+    .portfolio{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 }
