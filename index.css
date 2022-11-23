@@ -134,6 +134,15 @@ p a:visited{
     gap: 1em;
 }
 
+.portfolio-item:hover{
+    width: 18em;
+    height: 18em;
+    box-shadow: -.5em -.5em 1em .25em white;
+    border: .25em solid black;
+}
+
+
+
 /*Contact section*/
 
 #contact-options{
